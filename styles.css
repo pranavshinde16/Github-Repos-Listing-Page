@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile CSS */
+.profile-section {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* width: 40vw; */
+}
+#profile-bio {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-image {
+  border-radius: 100%;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.profile-details {
+  padding-left: 50px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-bio {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.profile-location,
+.profile-twitter {
+  padding-bottom: 5px;
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.profile-twitter a {
+  padding-left: 2px;
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.profile-twitter a:hover {
+  text-decoration: underline;
+}
+
+.locationIcon {
+  padding-right: 4px;
+}
+
+/*  Repositories CSS*/
+#repositories {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.repo-name {
+  font-size: 26px;
+  font-weight: 400;
+}
+#repositories .mb-3:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out 0.5s;
+}
+
+/* Header css */
+#header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+.label {
+  font-weight: 600;
+  margin-right: 10px;
+}
+#header h1 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group label {
+  margin-right: 10px;
+}
+
+.inputfield {
+  width: 250px;
+}
+
+.btn-primary {
+  margin-top: 10px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* loader CSS */
+#loader {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#pagelinks li {
+  cursor: pointer;
+}
+
+.card {
+  max-width: 40rem;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.list-inline-item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.forkIcon {
+  height: 25px;
+  width: 25px;
+  padding-right: 5px;
+  color: #777;
+  display: flex;
+  align-items: center;
+}
+
+#searchbar {
+  margin-top: 40px;
+}
+
+/* Custom Styles for Responsive Design */
+.profile-section {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 200px; /* Limit maximum width for larger screens */
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.profile-bio {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.profile-location,
+.profile-twitter {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* Responsive Styles for Small Screens  */
+/* @media (max-width: 1250px) {
+  .profile-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-details {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .profile-image {
+    margin-bottom: 20px;
+    width: 170px;
+    height: 170px;
+  }
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+} */
