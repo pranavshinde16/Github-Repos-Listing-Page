@@ -140,7 +140,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#pagelinks li {
+.badge {
   cursor: pointer;
 }
 
@@ -177,7 +177,7 @@ body {
   margin-top: 40px;
 }
 
-/* Custom Styles for Responsive Design */
+/* Profile */
 .profile-section {
   padding: 20px;
   background-color: #f8f9fa;
@@ -191,7 +191,7 @@ body {
 
 .profile-image {
   width: 100%;
-  max-width: 200px; /* Limit maximum width for larger screens */
+  max-width: 200px; 
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -218,27 +218,3 @@ body {
   margin-bottom: 8px;
 }
 
-/* Responsive Styles for Small Screens  */
-/* @media (max-width: 1250px) {
-  .profile-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .profile-details {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .profile-image {
-    margin-bottom: 20px;
-    width: 170px;
-    height: 170px;
-  }
-  .profile-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-} */

@@ -28,7 +28,7 @@ function getRepositories() {
             document.getElementById("loader").classList.add("d-none");
 
             displayProfile(user);
-            
+
             document.getElementById("searchbar").classList.remove("d-none")
 
             displayPagination(user.public_repos);
@@ -55,10 +55,10 @@ function displayProfile(user) {
             <img src="${user.avatar_url}" alt="User Image" class="profile-image img-fluid">
             <div class="profile-details">
                 <div class="profile-name">${user.name}</div>
-                <div class="profile-bio d-flex justify-content-center">${user.bio || "A github user"}</div>
-                <div class="profile-location d-flex justify-content-center"><img class="locationIcon" src="./assets/location.svg"> Location: ${user.location || "India"}</div>
-                <div class="profile-twitter d-flex justify-content-center"><a href="${user.twitter_username ? `https://twitter.com/${user.twitter_username}` : 'https://twitter.com/home'}" target="_blank">${user.twitter_username ? `Twitter: @${user.twitter_username}` : 'Twitter: Not specified'}</a></div>
-                <div class="profile-twitter d-flex justify-content-center"><a href="${user.html_url ? `${user.html_url}` : 'https://github.com/'}" target="_blank">${user.html_url? `&#128279;: ${user.html_url}` : 'Github: Not specified'}</a></div>
+                <div class="profile-bio d-flex justify-content-start text-wrap">${user.bio || "A github user"}</div>
+                <div class="profile-location d-flex justify-content-start"><img class="locationIcon" src="./assets/location.svg"> Location: ${user.location || "India"}</div>
+                <div class="profile-twitter d-flex justify-content-start"><a href="${user.twitter_username ? `https://twitter.com/${user.twitter_username}` : 'https://twitter.com/home'}" target="_blank">${user.twitter_username ? `Twitter: @${user.twitter_username}` : 'Twitter: Not specified'}</a></div>
+                <div class="profile-twitter d-flex justify-content-start"><a href="${user.html_url ? `${user.html_url}` : 'https://github.com/'}" target="_blank">${user.html_url ? `&#128279;: ${user.html_url}` : 'Github: Not specified'}</a></div>
             </div>
         </div>
     </div>
@@ -70,7 +70,7 @@ function displayRepositories(repositories) {
     repositoriesContainer.innerHTML = "";
 
     repositories.forEach(repo => {
-        const repoButtons = repo.topics.map(topic => `<span class="badge badge-info p-2 mt-1">${topic}</span>`)?.join(' ');
+        const repoButtons = repo.topics.map(topic => `<span class="badge badge-info p-2 mt-1 ml-1">${topic}</span>`)?.join(' ');
         const repoElement = document.createElement("div");
         repoElement.className = "mb-3";
         repoElement.innerHTML = `
